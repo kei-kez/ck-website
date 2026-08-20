@@ -6,14 +6,12 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-// Get the site URL from environment variables, or use the default value if not set
-// Note: After the first deployment, be sure to set the correct PUBLIC_SITE_URL in the .env file
-const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://portfolio.ricoui.com/';
+const siteUrl = 'https://kei-kez.github.io';
 
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
-  base: '/',
+  base: '/ck-website',
   envPrefix: 'PUBLIC_',
   vite: {
     plugins: [tailwindcss()],

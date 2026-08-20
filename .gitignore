@@ -36,3 +36,6 @@ Thumbs.db
 *.tmp
 *.temp
 .cache/
+
+public/assets/works/alcohol.mp4
+public/assets/works/e-campus.mp4

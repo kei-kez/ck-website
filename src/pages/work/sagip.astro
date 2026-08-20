@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import PostLayout from "@/layouts/PostLayout.astro";
+import PageHeader from "@/components/elements/PageHeader.astro";
+import ActionBar from "@/components/widgets/ActionBar.astro";
+import SeparatorLine from "@/components/elements/SeparatorLine.astro";
+
+// Automatically import images for Sagip Dagat
+const allImagesModules = import.meta.glob('../../assets/work/sagip-dagat/*.{jpg,png,webp}', { eager: true });
+const allImages = Object.values(allImagesModules) as Array<{ default: any }>;
+const logoUrl = "https://sagipdagat.vercel.app/favicon.png";
+---
+<PostLayout
+	title="Sagip Dagat - Marine Conservation & Fisheries Monitoring Platform"
+	description='Sagip Dagat is an interactive web application and geospatial monitoring platform designed to support marine resource management and coastal protection.'
+	keywords='Sagip Dagat, Marine Conservation, Fisheries, Astro, GIS, Web Application, BFAR'
+>
+	<div class="work article">
+		<main class="work-wrapper">
+				<PageHeader
+					title="Sagip Dagat - Marine Conservation Platform"
+					tags={["GIS", "Web App", "Conservation"]}
+					className="mb-6 md:mb-8"
+				>
+				</PageHeader>
+			<div class="site-container m-auto">
+				<SeparatorLine />
+			</div>
+			<section class="article-content">
+				<div class="site-container mx-auto my-8 md:my-16 ">
+					<div>
+						<p>
+							Sagip Dagat is a specialized web platform engineered to support marine resource management, fisheries monitoring, and coastal environmental protection. By combining clean frontend architecture with interactive geospatial mapping, it helps visualize aquatic resources and track critical data efficiently.
+						</p>
+						<p>Features</p>
+						<ul>
+							<li>✅ Interactive Geospatial Mapping: Seamlessly integrates mapping tools to track and analyze marine data points and coastal zones.</li>
+							<li>✅ Responsive Design: Fully optimized for desktop and field mobile viewing to ensure accessibility across different environments.</li>
+							<li>✅ Built with Astro.js: Leverages high-performance rendering for lightning-fast loading speeds and easy component customization.</li>
+							<li>✅ Intuitive User Interface: Clean, minimalist layout designed for straightforward navigation and data interpretation.</li>
+							<li>✅ Reliable Performance: Engineered for robust reliability, ensuring seamless interactions even when handling complex datasets.</li>
+							<li>✅ Actionable Insights: Designed to turn complex environmental metrics into clear, decision-ready digital experiences.</li>
+						</ul>
+						<p>🔗🔗 <a href="https://sagipdagat.vercel.app/" target="_blank">Live Demo</a></p>
+					</div>
+					{allImages.map((img, index) => (
+						<picture class="picture mt-8 md:mt-12 mb-8 md:mb-12 rounded-2xl overflow-hidden">
+							<Image src={img.default} alt={`Sagip Dagat Image ${index + 1}`} class="w-full h-full object-cover" loading="lazy" decoding="async" quality={100}/>
+						</picture>
+					))}
+				</div>
+			</section>
+		</main>
+	</div>
+	<ActionBar logo={logoUrl} tags={["Marine", "Geospatial"]} url="https://sagipdagat.vercel.app/" github="https://github.com/chenaniahkeziah/sagipdagat" visitLabel="Visit Site" />
+</PostLayout>

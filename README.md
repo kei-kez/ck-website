@@ -168,11 +168,11 @@ Create new MDX files in the `src/content/post/` directory. The project uses Astr
 - **Blog**: [ricoui.com](https://ricoui.com)
 - **Email**: hello@ricoui.com
 - **Twitter**: [@ricouii](https://x.com/ricouii)
-- **GitHub**: [@ricocc](https://github.com/ricocc)
+- **GitHub**: [@kez](https://github.com/kei-kez)
 
 ## 💡 Other Products
 
-- **Rico Blog** - Open Source: [https://github.com/ricocc/public-portfolio-site](https://github.com/ricocc/public-portfolio-site)
+- **Rico Blog** - Open Source: [https://github.com/kei-kez/public-portfolio-site](https://github.com/kei-kez/public-portfolio-site)
 
 - **OG Gallery**: [ricoog.com](https://ricoog.com/)
 

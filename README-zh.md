@@ -166,15 +166,15 @@ export const siteConfig = {
 ## 📧 联系方式
 
 - **作者**: Ricoui
-- **博客**: [ricoui.com](https://github.com/ricocc)
+- **博客**: [ricoui.com](https://github.com/kei-kez)
 - **邮箱**: hello@ricoui.com
-- **Twitter**: [@ricouii](https://x.com/ricouii)
-- **GitHub**: [@ricocc](https://github.com/ricocc)
+- **Twitter**: [@kez](https://x.com/ricouii)
+- **GitHub**: [@kei-kez](https://github.com/kei-kez)
 
 
 ## 💡 其他产品
 
--  **Rico Blog** - 开源 :  [https://github.com/ricocc/public-portfolio-site](https://github.com/ricocc/public-portfolio-site)
+-  **Rico Blog** - 开源 :  [https://github.com/kei-kez/public-portfolio-site](https://github.com/kei-kez/public-portfolio-site)
 
 - **OG Gallery**: [ricoog.com](https://ricoog.com/)
 

@@ -3,48 +3,103 @@ import works from "@/collections/works.json";
 import WorkCard from "@/components/cards/WorkCard.astro";
 
 interface Props {
-  limit?: number; // 限制显示的项目数量
+  limit?: number;
 }
 
 interface Work {
   name: string;
   description?: string;
   image: string;
-  url: string;
+  url?: string;
   tags?: string[];
   video?: string;
   isShow?: boolean;
+  category?: 'professional' | 'student';
 }
 
 const { limit } = Astro.props;
 
-// 获取项目列表
 let allWorks = works as Work[];
 
-// 如果指定了 limit，使用 limit
 if (limit !== undefined) {
   allWorks = works.slice(0, limit) as Work[];
 }
 ---
 
 <section class="py-8 md:py-8">
+  <!-- Tab Navigation Buttons (Centered) -->
+  <div class="flex items-center justify-center gap-3 mb-8" id="work-tabs">
+    <button 
+      type="button" 
+      data-tab="professional"
+      class="tab-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-primary text-white cursor-pointer"
+    >
+      Professional
+    </button>
+    <button 
+      type="button" 
+      data-tab="student"
+      class="tab-btn px-5 py-2 rounded-full text-sm font-medium transition-all bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 cursor-pointer"
+    >
+      Student Projects
+    </button>
+  </div>
+
   <div class="space-y-8 md:space-y-10">
-    <!-- 所有项目全宽显示 -->
     {allWorks
       .filter(work => work.isShow !== false)
       .map((work, index) => (
-        <WorkCard
-          name={work.name}
-          description={work.description}
-          image={work.image}
-          url={work.url}
-          tags={work.tags}
-          video={work.video}
-          isShow={work.isShow}
-          layout="featured"
-          index={index}
-        />
+        <div data-category={work.category || 'student'} class="project-item">
+          <WorkCard
+            name={work.name}
+            description={work.description}
+            image={work.image}
+            url={work.url || ""}
+            tags={work.tags}
+            video={work.video}
+            isShow={work.isShow}
+            layout="featured"
+            index={index}
+          />
+        </div>
       ))}
   </div>
 </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.tab-btn');
+    const items = document.querySelectorAll('.project-item');
+
+    // Default view: Show professional first, hide student
+    items.forEach(item => {
+      if (item.getAttribute('data-category') !== 'professional') {
+        (item as HTMLElement).style.display = 'none';
+      }
+    });
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+
+        // Update button active states
+        buttons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-white');
+          b.classList.add('bg-neutral-200', 'dark:bg-neutral-800', 'text-neutral-700', 'dark:text-neutral-300');
+        });
+        btn.classList.remove('bg-neutral-200', 'dark:bg-neutral-800', 'text-neutral-700', 'dark:text-neutral-300');
+        btn.classList.add('bg-primary', 'text-white');
+
+        // Show/hide cards based on selected tab
+        items.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (category === targetTab) {
+            (item as HTMLElement).style.display = 'block';
+          } else {
+            (item as HTMLElement).style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

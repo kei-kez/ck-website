@@ -1,17 +1,16 @@
 [
-	{
-		"dates": "June 2018 · Present",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Leading the design of user-centric web applications and dating platforms.",
-		"logo": "/assets/experiences/company.jpg"
-	},
-	{
-		"dates": "July 2016 · June 2017",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
-		"logo": "/assets/experiences/company.jpg"
-	}
-
+  {
+    "dates": "August 2024 · Present",
+    "role": "Computer Operator III",
+    "company": "Bureau of Fisheries and Aquatic Resources",
+    "description": "Served as a key technical contributor supporting the development team across all phases of coding and software design. Actively identified, analyzed, and resolved software bugs to improve syste stability and performance. Conducted rigorous testing and validation on developed applications and programs to ensure optimal functionality, compliance, and usee.",
+    "logo": "/ck-website/assets/experiences/company.jpg"
+  },
+  {
+    "dates": "September 2023 · June 2024",
+    "role": "CE College Instructor and Computer Technician",
+    "company": "Jesus Is Lord COlleges Foundation, Inc",
+    "description": "Served as a part-time College Instructor for the Bachelor of Science in Civil Engineering (major in Structural Engineering) program, delivering coursework in AutoCAD, Computer Fundamentals, and Programming. Concurrently held a contractual full-time role as a Computer Laboratory Technician with administrative staff duties, ensuring smooth laboratory operations, maintaining hardware and software systems, and supporting daily departmental administration.",
+    "logo": "/ck-website/assets/experiences/company.jpg"
+  }
 ]

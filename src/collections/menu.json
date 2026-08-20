@@ -1,18 +1,18 @@
 [
 	{
 		"name": "Home",
-		"url": "/"
+		"url": "/ck-website/"
 	},
 	{
 		"name": "Writing",
-		"url": "/blog"
+		"url": "/ck-website/blog"
 	},
 	{
 		"name": "Works",
-		"url": "/works"
+		"url": "/ck-website/works"
 	},
 	{
 		"name": "About",
-		"url": "/about"
+		"url": "/ck-website/about"
 	}
 ]

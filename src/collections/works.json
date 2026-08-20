@@ -1,58 +1,81 @@
 [
-	{
-		"name": "RicoOG",
-		"description": "OG Inspiration Library",
-		"tags": ["Open Graph", "Design", "Library"],
-		"image": "/assets/works/ricoog.jpg",
-		"video": "/assets/works/ricoog.mp4",
-		"url": "https://ricoog.com/",
-		"isShow": true
-	},
-	{
-		"name": "GradientsHub",
-		"description": "Gradient Resources & Tools",
-		"tags": ["Gradient","Resources","Tools"],
-		"image": "/assets/works/gradientshub.jpg",
-		"video": "/assets/works/gradientshub.mp4",
-		"url": "https://gradientshub.com"
-	},
-	{
-		"name": "Luon Models",
-		"description": "Agency Company Website",
-		"tags": ["Agency","Website"],
-		"image": "/assets/works/luonmodels.jpg",
-		"video": "/assets/works/luonmodels.mp4",
-		"url": "/work/luonmodels"
-	},
-	{
-		"name": "Ricoui",
-		"description": "Designer Portfolio",
-		"tags": ["Designer","Portfolio","Open Source"],
-		"image": "/assets/works/ricoui.jpg",
-		"video": "/assets/works/ricoui.mp4",
-		"url": "/work/ricoblog2024"
-
-	},
-	{
-		"name": "3D Valentines Assets",
-		"description": "Blender Design Resources & Assets",
-		"tags": ["3D","Resources","Assets"],
-		"image": "/assets/works/3d-valentines.jpg",
-		"video": "/assets/works/3d-valentines.mp4",
-		"url": "/work/3dvalentine"
-	},
-	{
-		"name": "UIUXDECK",
-		"description": "Design Resources & Tools",
-		"tags": ["Design","Resources","Tools"],
-		"image": "/assets/works/uiuxdeck.jpg",
-		"url": "http://uiuxdeck.com/"
-	},
-	{
-		"name": "Inspoweb",
-		"description": "Web Inspiration Library",
-		"tags": ["Inspiration","Web Collection"],
-		"image": "/assets/works/inspoweb.jpg",
-		"url": "https://inspoweb.com/"
-	}
+  {
+    "name": "E-Campus Student Information System",
+    "description": "A comprehensive student information system featuring a modern dark UI and clean navigation.",
+    "image": "/ck-website/assets/works/e-campus.png",
+    "video": "/ck-website/assets/works/e-campus.mp4",
+    "tags": ["Web", "UI/UX", "JavaScript"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "StorageHub.com",
+    "description": "A storage space finder web application with a sleek landing page and contact integration.",
+    "image": "/ck-website/assets/works/storage-hub.png",
+    "video": "/ck-website/assets/works/storage-hub.mp4",
+    "tags": ["Web", "HTML/CSS", "JavaScript"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "Basic Create, Read, Update, Delete, Search (CRUDS)",
+    "description": "A streamlined data management web application built for efficient record handling, featuring real-time search capabilities and full CRUD operations.",
+    "image": "/ck-website/assets/works/bsu.png",
+    "video": "/ck-website/assets/works/bsu.mp4",
+    "tags": ["Web", "HTML/CSS", "JavaScript"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "ACAFWWCM Microcontroller System",
+    "description": "An automated microcontroller-based system equipped with sensor monitoring and control mechanics.",
+    "image": "/ck-website/assets/works/thesis.jpg",
+	  "url": "/ck-website/blog/thesis",
+    "tags": ["Micro", "Hardware", "Research"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "Automatic Alcohol Dispenser",
+    "description": "A touchless, sensor-driven automated alcohol dispenser designed for hygienic public sanitation and hands-free activation.",
+    "image": "/ck-website/assets/works/alcohol.png",
+    "video": "/ck-website/assets/works/alcohol.mp4",
+    "tags": ["Hardware", "Arduino", "Sensor"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "Digital Keypad Security Door Lock using Arduino",
+    "description": "A secure electronic access control system built with an Arduino microcontroller and a matrix keypad for password-protected locking mechanisms.",
+    "image": "/ck-website/assets/works/lock.png",
+    "video": "/ck-website/assets/works/lock.mp4",
+    "tags": ["Hardware", "Arduino", "Security"],
+    "category": "student",
+    "isShow": true
+  },
+  {
+    "name": "E-Collection and E-Payment System",
+    "description": "A secure financial transaction portal designed to streamline institutional revenue collection, automated fee processing, and payment tracking for users and administrators.",
+    "image": "/ck-website/assets/works/ecps.png",
+    "tags": ["Angular", "TypeScript", "Web"],
+    "category": "professional",
+    "isShow": true
+  },
+  {
+    "name": "Sama-samang Aksyon para sa Gampaning IProtekta ang Karagatan",
+    "description": "A marine resource monitoring and spatial tracking application integrating mapping tools to support fisheries management, environmental oversight, and geospatial data visualization.",
+    "image": "/ck-website/assets/works/sagip-dagat.png",
+    "url": "",
+    "tags": ["Angular", "TypeScript", "Leaflet", "GeoServer"],
+    "category": "professional",
+    "isShow": true
+  },
+  {
+    "name": "Electronic Recruitment System",
+    "description": "An interactive applicant tracking and hiring platform built to simplify job application workflows, resume submissions, and administrative evaluation stages.",
+    "image": "/ck-website/assets/works/recruitment.png",
+    "tags": ["Angular", "TypeScript", "Tailwind"],
+    "category": "professional",
+    "isShow": true
+  }
 ]

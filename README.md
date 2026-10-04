@@ -1,4 +1,4 @@
-# Rico Portfolio - Designer Portfolio Website
+# CK Portfolio
 
 > [中文文档](README-zh.md) | English
 

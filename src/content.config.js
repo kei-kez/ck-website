@@ -18,6 +18,7 @@ const post = defineCollection({
 		img: z.string().optional(),
 		img_alt: z.string().optional(),
 		featured: z.boolean().optional(),
+		link: z.string().optional(),
 	}),
 });
 

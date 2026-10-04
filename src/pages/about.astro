@@ -102,9 +102,7 @@ const resumePdfPath = "/ck-website/assets/resume.pdf";
           data-aos-once="true"
         >
              <div class="social-list flex flex-wrap gap-2 items-center justify-start mt-6 mb-8">
-                {social
-                  .filter(item => item.isShow !== false)
-                  .map((item, index) => (
+                {social.map((item, index) => (
                     <a
                       href={item.url}
                       target="_blank"
